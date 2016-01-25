@@ -333,6 +333,13 @@
       },
       "ver": "1.0.0"
     },
+    "steps": {
+      "name": "步骤栏",
+      "src": {
+        "less": ["~/controls/steps.less"]
+      },
+      "ver": "1.0.0"
+    },
     "table.basic": {
       "name": "基本表格",
       "src": {
