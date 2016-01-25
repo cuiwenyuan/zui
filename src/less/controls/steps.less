@@ -62,30 +62,30 @@
 }
 .steps .finished {
   color: #fff;
-  background-color: #ff8099;
+  background-color: @steps-bg;
 }
 .steps .finished .triangle-right {
-  border-color: transparent transparent transparent #ff8099;
+  border-color: transparent transparent transparent @steps-bg;
 }
 .steps .finished .round {
-  color: #ff8099;
+  color: @steps-bg;
   color: #fff\9;
   background-color: #fff;
   background-color: transparent\9;
 }
 .steps .finished .round > i {
   font-size: 12px;
-  color: #ff8099;
+  color: @steps-bg;
 }
 .steps .current {
   color: #fff;
-  background-color: #4cb9fc;
+  background-color: @steps-bg-current;
 }
 .steps .current .triangle-right {
-  border-color: transparent transparent transparent #4cb9fc;
+  border-color: transparent transparent transparent @steps-bg-current;
 }
 .steps .current .round {
-  color: #4cb9fc;
+  color: @steps-bg-current;
   color: #fff\9;
   background-color: #fff;
   background-color: transparent\9;
@@ -159,12 +159,12 @@
   /*
 	> .current {
 		&:before {
-			background-color: @stepsCurrentColor;
+			background-color: @steps-bg-current;
 		}
 
 		.round {
-			border: 4px @stepsCurrentColor solid;
-			background-color: @stepsCurrentColor;
+			border: 4px @steps-bg-current solid;
+			background-color: @steps-bg-current;
 			color: @stepsFinishedTextColor;
 		}
 		label {
@@ -239,7 +239,7 @@
 }
 .steps-round > li .round > i {
   font-size: 12px;
-  color: #ff8099;
+  color: @steps-bg;
 }
 .steps-round > li label {
   width: 100%;
@@ -252,17 +252,17 @@
 }
 .steps-round > .finished:before,
 .steps-round .current:before {
-  background-color: #ff8099;
+  background-color: @steps-bg;
 }
 .steps-round > .finished .round,
 .steps-round .current .round {
   color: #fff;
-  background-color: #ff8099;
-  border: 4px #ff8099 solid;
+  background-color: @steps-bg;
+  border: 4px @steps-bg solid;
 }
 .steps-round > .finished label,
 .steps-round .current label {
-  color: #ff8099;
+  color: @steps-bg;
 }
 .steps-round.step-2 > li {
   width: 50%;
